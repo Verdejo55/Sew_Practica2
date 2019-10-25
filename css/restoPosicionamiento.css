@@ -1,0 +1,19 @@
+body{
+    display: grid;
+    grid-template-columns: 1 fr 3fr;
+    grid-template-areas: 
+        "... header"
+        "nav content";
+        
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: content;
+}
+nav{
+    grid-area: nav;
+}
