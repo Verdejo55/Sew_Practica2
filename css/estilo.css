@@ -21,9 +21,7 @@ h1,h2,h3,h4,h5,h6 {
       margin-top: .5em;
       margin-bottom: .5em;
       margin-left: 1em;
-      margin-right: .5em; 
-      padding: 2em;
-      text-transform:uppercase;
+      margin-right: .5em;
   }
   /*
   Especificacion=1
@@ -87,7 +85,8 @@ a:visited{
 /*
 Especificacion=1
 */
-em { color: red; } /*Cambiar las columnas para poner em*/ 
+em { color: red;
+background-color: #f6f6f6; } /*Cambiar las columnas para poner em*/ 
 /*
 Especificacion=1
 */

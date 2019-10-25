@@ -1,40 +1,118 @@
+/*
+especificidad:1
+*/
+
 body {
-      font: 400 15px Arial, sans-serif;
-      line-height: 1.8;
-      color: #000000;
-      background-color: #f6f6f6;
-  }
-  h1,h2 {
-    font: bold 1.3em Arial, sans-serif;
-    background-color:rgb(24, 0, 235); 
-    color: rgb(218, 3, 3);
-    padding: 100px 25px;
-    text-align: center;  
-    font-size-adjust: 0.5;  
-    margin-top: .5em;
-    margin-bottom: .5em;
-    margin-left: 1em;
-    margin-right: .5em; 
-    padding: 2em;
-    text-transform:uppercase;
+  font: 400 15px Arial, sans-serif;
+  line-height: 1.8;
+  color: #000000;
+  background-color: #f6f6f6;
 }
-p::first-letter { font-size: 2em; }
-p{
-  text-align: left;  
+
+/*
+especificidad:1
+*/
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+/*
+especificidad:1
+*/
+
+h1 {
+  font: bold 1.3em Arial, sans-serif;
+  background-color: rgb(24, 0, 235);
+  color: rgb(218, 3, 3);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*
+especificidad:1
+*/
+
+h2 {
+  font: bold 1.3em Arial, sans-serif;
+  color: rgb(218, 3, 3);
+  background-color: #f6f6f6;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*
+especificidad:2
+*/
+
+p::first-letter {
+  font-size: 2em;
+}
+
+/*
+especificidad:1
+*/
+
+p {
+  text-align: left;
   text-justify: inter-word;
 }
-ul,ol{
+
+/*
+especificidad:1
+*/
+
+ul, ol {
   font-size: 1.2em;
   background-color: #f6f6f6;
   color: #000000;
 }
+
+/*
+especificidad:1
+*/
+
+li {
+  color: #09d33c;
+  background-color: #f6f6f6;
+}
+
+/*
+especificidad:1
+*/
+
 table {
   width: 100%;
   border: 1px solid #000;
 }
+
+/*
+especificidad:1
+*/
+
 th, td {
   width: 25%;
   text-align: left;
   vertical-align: top;
   border: 1px solid #000;
+}
+
+/*
+Especificacion=11
+*/
+
+a:link {
+  border-bottom: 1px dotted rgb(12, 228, 84);
+  text-decoration: none;
+}
+
+/*
+Especificacion=11
+*/
+
+a:visited {
+  text-decoration-line: underline;
+  text-decoration-color: #EBD600;
 }

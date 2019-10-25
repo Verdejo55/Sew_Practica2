@@ -1,6 +1,6 @@
 body { 
-  background-image: url("../multimedia/fondo.jpg") 
+  background-image: url("fondo.jpg") 
 }
 p { 
-  background-image: gray ;
+  background-image: initial; 
 }

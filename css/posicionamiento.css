@@ -1,18 +1,27 @@
-body{
-    display: grid;
-    grid-template-columns: 1 fr 3fr;
-    grid-template-areas: 
-        "... header"
-        "nav content";
+nav {
+    grid-area: nav;
 }
 
-header{
+ main {
+    grid-area: content;
+}
+
+header {
     grid-area: header;
 }
 
-section{
-    grid-area: content;
+footer {
+    grid-area: footer;
 }
-nav{
-    grid-area: nav;
+
+
+body {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas:
+    "... header"
+    "nav content"
+    "footer  footer";
+   
 }
