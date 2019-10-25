@@ -1,0 +1,6 @@
+body { 
+  background-image: url("../multimedia/fondoDefinitivo.jpg") 
+}
+p { 
+  background-image: initial; 
+}
